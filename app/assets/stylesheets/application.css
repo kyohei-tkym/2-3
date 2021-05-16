@@ -102,3 +102,12 @@ display: block;
   overflow: nowrap;
   text-overflow: ellipsis;
 }
+
+.new{
+  color: green;
+}
+
+.todolist{
+  display: flex;
+  justify-content: center;
+}
