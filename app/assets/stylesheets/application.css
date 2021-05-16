@@ -104,10 +104,15 @@ display: block;
 }
 
 .new{
-  color: green;
+  color: red;
 }
 
 .todolist{
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+}
+
+.index{
+  display: flex;
+  flex-wrap: wrap;
 }
