@@ -32,7 +32,7 @@ header{
   border-top: solid 5px #000000;
 }
 
-header.headline{
+header .headline{
   font-size: 32px;
 }
 
@@ -86,7 +86,7 @@ main{
 
 .list-body{
 
-display: block;
+  display: block;
 
   color: gray;
   font-size: 12px;
@@ -105,14 +105,4 @@ display: block;
 
 .new{
   color: red;
-}
-
-.todolist{
-  display: flex;
-  flex-flow: column;
-}
-
-.index{
-  display: flex;
-  flex-wrap: wrap;
 }

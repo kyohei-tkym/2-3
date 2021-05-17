@@ -1,23 +1,12 @@
-<div class="todolist">
-  <div class="list-wrap">
-    <% @lists.each do |list| %>
-      <div class="list-box">
-        <%= attachment_image_tag list, :image, :fill,200,200,format:'jpeg' %>
-        <div class="list-comment">
-          <span class="list-body"><%= list.body %></span>
-          <span class="list-title"><%=link_to list.title, todolist_path(list.id) %></span>
-        </div>
+
+<div class="list-wrap">
+  <% @lists.each do |list| %>
+    <div class="list-box">
+      <%= attachment_image_tag list, :image, :fill,200,200,format:'jpeg' %>
+      <div class="list-comment">
+        <span class="list-body"><%= list.body %></span>
+        <span class="list-title"><%=link_to list.title, todolist_path(list.id) %></span>
       </div>
-    <% end %>
-  </div>
-  <div class="index">
-    <div class="index-small">
-      <h4>投稿一覧</h4>
-      <% @lists.each do |list| %>
-        <p>タイトル</p>
-        <span><%=link_to list.title, todolist_path(list.id) %></span>
-        <%= attachment_image_tag list, :image, :fill, 100, 100, format:'jpeg' %>
-      <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
